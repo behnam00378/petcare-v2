@@ -1,0 +1,38 @@
+project/
+├── data/
+│   ├── species/            # داده‌های تشخیص سگ یا گربه
+│   │   ├── train/
+│   │   │   ├── dog/
+│   │   │   └── cat/
+│   │   ├── validation/
+│   │   │   ├── dog/
+│   │   │   └── cat/
+│   │   └── test/
+│   │       ├── dog/
+│   │       └── cat/
+│   │
+│   ├── dog_breeds/         # داده‌های نژادهای سگ
+│   │   ├── train/
+│   │   │   ├── breed1/
+│   │   │   ├── breed2/
+│   │   │   └── ...
+│   │   ├── validation/
+│   │   └── test/
+│   │
+│   └── cat_breeds/         # داده‌های نژادهای گربه
+│       ├── train/
+│       │   ├── breedA/
+│       │   ├── breedB/
+│       │   └── ...
+│       ├── validation/
+│       └── test/
+│
+├── models/                 # مدل‌های ذخیره شده
+│   ├── species_model.h5
+│   ├── dog_breed_model.h5
+│   └── cat_breed_model.h5
+│
+└── code/
+    ├── train_species.py    # آموزش تشخیص سگ/گربه
+    ├── train_breeds.py     # آموزش تشخیص نژاد
+    └── predict.py          # پیش‌بینی
